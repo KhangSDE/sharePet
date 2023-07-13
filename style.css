@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Prompt', sans-serif;
+    user-select: none;
+}
+input, button {
+    font-family: 'Prompt', sans-serif;
+}
+
+section {
+    background-color: rgba(255, 22, 22, 0);
+    width: 100%;
+    height: 40rem;
+}
+
+
+section .post-container {
+    background-color: rgba(170, 170, 170, 0.199);
+    width: 50rem;
+    height: 40rem;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+}
+section .post-container .image-container img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 5vw;
+    left: 2vw;
+
+
+}
+.features-container {
+    background-color: rgb(201, 201, 201);
+    width: 10rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 2vw;
+    left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+.features-container .like-button img{
+    width: 2rem;
+    filter: brightness(100);
+    
+}
+
+.features-container .like-button img.active {
+    filter: none;
+}
+.features-container .save-button img{
+    width: 1.7rem;
+
+}
+.features-container .share-button img{
+    width: 1.7rem;
+    
+}
+.image-like.active {
+    filter: none;
+}
+
+.features-container .like-button{
+    border: none;
+}
+.features-container .save-button{
+    border: none;
+}
+.features-container .share-button{
+    border: none;
+}
+
+header .bottom-navbar .post-picture {
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 30vw;
+    height: 3rem;
+    border-radius: 30px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 9px 5px rgba(255,255,255,0.71); 
+box-shadow: 0px 0px 9px 5px rgba(255,255,255,0.71);
+}
+header .bottom-navbar .post-picture button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+header .bottom-navbar .post-picture button:hover {
+    transform: scale(1.1);
+}
+header .bottom-navbar .post-picture img {
+    width: 1rem;
+    filter: invert();
+}
+
+
+* {
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.comment-section {
+    background-color: rgba(40, 97, 255, 0);
+    width: 25rem;
+    position: absolute;
+    right: -1vw;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 96px;
+}
+.comment-section .comment-area {
+    background-color: white;
+    width: 20rem;
+    height: 25rem;
+    overflow-x: auto;
+    position: relative;
+
+    top: -25px;
+    border-radius: 20px;
+}
+.comment-section .comment-area::-webkit-scrollbar{
+    display: none;
+}
+
+.comment-section input {
+    width: 19rem;
+    height: 1.8rem;
+    border: 2px solid black;
+    position: relative;
+
+    border-radius: 20px;
+    top: -20px;
+
+
+}
+
+.caption-container {
+    position: absolute;
+    left: 2vw;
+    bottom: 8vw;
+    background-color: white;
+    height: 1.9rem;
+    width: 25rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    
+    
+}
+.caption-container p {
+    position: absolute;
+    left: 10px;
+}
+.creating-post-container {
+    position: absolute;
+    width: 40rem;
+    height: 35rem;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    top: 6rem;
+    visibility: hidden;
+    border: 2px solid black;
+}
+.creating-post-container .image-container .labelInput {
+    position: absolute;
+    top: 20rem;
+    left: 23rem;
+    border: none;
+    background-color: rgb(179, 179, 179);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.creating-post-container .image-container img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 25px;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+.creating-post-container .caption-create input {
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 23rem;
+    left: 2rem;
+    height: 2rem;
+    width: 20rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.creating-post-container .post-create-button {
+    width: 9rem;
+    background-color: rgba(0, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.creating-post-container .post-create-button button {
+    border-radius: 10px;
+}
+.show {
+    visibility:visible ;
+}
+.hide {
+    visibility: hidden;
+}
+
+.container {
+    background-color: rgba(0, 255, 255, 0);
+    width: 100%;
+    height: 42rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: auto;
+    gap: 4rem;
+    
+}
+
+.text {
+    /* border: 2px solid black; */
+    height: auto;
+    border-radius: 15px;
+    word-break: break-all;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(221, 221, 221);
+    color: rgb(49, 49, 49);
+}
+
+.feature-menu{
+    background-color: rgb(207, 207, 207);
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.feature-menu .like-list img{
+    width: 2rem;
+    transition: 0.4s;
+}
+.feature-menu .like-list img:hover {
+    transform: translateY(-10px);
+}
+.feature-menu .save-list img{
+    width: 1.6rem;
+    transition: 0.4s;
+}
+.feature-menu .save-list img:hover {
+    transform: translateY(-10px);
+}
+.start-screen {
+    width: 50rem;
+    height: 30rem;
+    background-color: rgb(243, 243, 243);
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 5rem;
+    border-radius: 50px;
+    font-size: 4rem;
+    text-align: center;
+}
+.start-screen img {
+    position: absolute;
+    width: 15rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    filter: opacity(60%);
+}
+.start-screen p {
+    filter: opacity(60%);
+}
+
+.delete-container {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+} 
+.delete-container:hover {
+    transform: translateY(-10px);
+}
+.delete-container button {
+    border: none;
+
+}
+
+
+.delete-container .delete-button img {
+    width: 2rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #a6a6a6 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }

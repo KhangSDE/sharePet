@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <title>PetBe</title>
+</head>
+<body>
+    
+    <header>
+        <div class="bottom-navbar">
+            <div class="post-picture">
+                <button onclick="openCreatePost()">
+                <img src="images\111111.png">
+            </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="start-screen">
+        <p>PetBE</p>
+        <img src="images\paw.png">
+    </div>
+
+<div class="container">
+
+</div>
+
+        <div class="creating-post-container">
+            <div class="image-container">
+                <img src="https://img.freepik.com/premium-vector/cute-shiba-inu-dog-cartoon-icon_42750-300.jpg?w=2000">
+                <!-- <button onclick="postPicture()">wähle Bild</button> -->
+                <input type="file" id="inputFile"  style="visibility:hidden;" accept="image/jpeg, image/jpg, image/png">
+                <label for="inputFile" class="labelInput">wähle Bild</label>
+            </div>
+            <div class="caption-create">
+                <input autocomplete="off" id="caption-input" type="text" placeholder="schreibe Caption">
+            </div>
+            <div class="post-create-button">
+                <button onclick="createPost()">erstellen</button>
+            </div>
+        </div>
+
+        <div class="feature-menu">
+            <div class="like-list" onclick="likedPost()">
+                <img src="images\heart (1).png">
+            </div>
+            <div class="save-list">
+                <img src="images\save-instagram (1).png">
+            </div>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
