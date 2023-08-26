@@ -29,6 +29,20 @@ section .post-container {
     align-items: center;
     top: 30px;
 }
+@media (max-width: 1400px) {
+    section .post-container {
+        width: 40rem;
+        height: 30rem;
+    }
+}
+@media (max-width: 800px) {
+    section .post-container {
+        width: 30rem;
+        height: 40rem;
+    }
+}
+
+
 section .post-container .image-container img {
     width: 25rem;
     height: 25rem;
@@ -38,6 +52,21 @@ section .post-container .image-container img {
     left: 2vw;
 
 
+}
+@media (max-width: 1400px) {
+    section .post-container .image-container img {
+        width: 15rem;
+        height: 15rem;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    section .post-container .image-container img {
+        width: 20rem;
+        height: 20rem;
+        left: 10vw;
+    }
 }
 .features-container {
     background-color: rgb(201, 201, 201);
@@ -51,6 +80,13 @@ section .post-container .image-container img {
     align-items: center;
     gap: 10px;
     border-radius: 30px;
+}
+@media (max-width: 1400px) {
+    .features-container {
+        width: 9rem;
+        height: 3rem;
+        
+    }
 }
 .features-container .like-button img{
     width: 2rem;
@@ -134,8 +170,23 @@ header .bottom-navbar .post-picture img {
     flex-direction: column;
     top: 96px;
 }
+@media (max-width: 1400px) {
+    .comment-section {
+        width: 25rem;
+        height: 17rem;
+        
+    }
+}
+@media (max-width: 800px) {
+    .comment-section {
+        width: 25rem;
+        height: 10rem;
+        top: 61vw;
+        right: 9vw;
+    }
+}
 .comment-section .comment-area {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 20rem;
     height: 25rem;
     overflow-x: auto;
@@ -174,6 +225,23 @@ header .bottom-navbar .post-picture img {
     
     
 }
+@media (max-width: 1400px) {
+    .caption-container {
+        width: 15rem;
+        height: 1.9rem;
+        bottom: 13vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .caption-container {
+        width: 15rem;
+        height: 1.9rem;
+        
+        left: 10vw;
+    }
+}
+
 .caption-container p {
     position: absolute;
     left: 10px;
@@ -278,6 +346,22 @@ header .bottom-navbar .post-picture img {
     top: 10px;
     right: 20px;
 }
+
+@media (max-width: 1400px) {
+    .feature-menu {
+        width: 9rem;
+        height: 1.9rem;
+        bottom: 13vw;
+    }
+}
+@media (max-width: 800px) {
+    .feature-menu {
+        width: 5rem;
+        height: 1.9rem;
+        top: 860px;
+    }
+}
+
 .feature-menu .like-list img{
     width: 2rem;
     transition: 0.4s;
