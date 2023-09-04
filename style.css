@@ -41,6 +41,12 @@ section .post-container {
         height: 40rem;
     }
 }
+@media (max-width: 390px) {
+    section .post-container {
+        width: 90vw;
+        height: 180vw;
+    }
+}
 
 
 section .post-container .image-container img {
@@ -53,6 +59,7 @@ section .post-container .image-container img {
 
 
 }
+
 @media (max-width: 1400px) {
     section .post-container .image-container img {
         width: 15rem;
@@ -68,6 +75,14 @@ section .post-container .image-container img {
         left: 10vw;
     }
 }
+@media (max-width: 390px) {
+    section .post-container .image-container img {
+        width: 55vw;
+        height: 55vw;
+
+        
+    }
+}
 .features-container {
     background-color: rgb(201, 201, 201);
     width: 10rem;
@@ -81,17 +96,33 @@ section .post-container .image-container img {
     gap: 10px;
     border-radius: 30px;
 }
+
+
 @media (max-width: 1400px) {
     .features-container {
         width: 9rem;
         height: 3rem;
+        gap: 1vw;
         
+    }
+}
+@media (max-width: 390px) {
+    .features-container {
+        width: 30vw;
+        height: 10vw;
+        left: 5vw;
     }
 }
 .features-container .like-button img{
     width: 2rem;
     filter: brightness(100);
     
+}
+@media (max-width: 390px) {
+    .features-container .like-button img{
+        width: 7vw;
+ 
+    }
 }
 
 .features-container .like-button img.active {
@@ -101,9 +132,21 @@ section .post-container .image-container img {
     width: 1.7rem;
 
 }
+@media (max-width: 390px) {
+    .features-container .save-button img{
+        width: 7vw;
+ 
+    }
+}
 .features-container .share-button img{
     width: 1.7rem;
     
+}
+@media (max-width: 390px) {
+    .features-container .share-button img{
+        width: 7vw;
+ 
+    }
 }
 .image-like.active {
     filter: none;
@@ -185,6 +228,17 @@ header .bottom-navbar .post-picture img {
         right: 9vw;
     }
 }
+@media (max-width: 390px) {
+    .comment-section {
+        width: 85vw;
+        height: 80vw;
+        top: 69vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0, 255, 255, 0);
+    }
+}
 .comment-section .comment-area {
     background-color: rgb(255, 255, 255);
     width: 20rem;
@@ -194,6 +248,17 @@ header .bottom-navbar .post-picture img {
 
     top: -25px;
     border-radius: 20px;
+}
+@media (max-width: 390px) {
+    .comment-section .comment-area{
+        width: 85vw;
+        
+        
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
 }
 .comment-section .comment-area::-webkit-scrollbar{
     display: none;
@@ -209,6 +274,17 @@ header .bottom-navbar .post-picture img {
     top: -20px;
 
 
+}
+@media (max-width: 390px) {
+    .comment-section input{
+        width: 80vw;
+        
+        
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
 }
 
 .caption-container {
@@ -242,6 +318,14 @@ header .bottom-navbar .post-picture img {
     }
 }
 
+@media (max-width: 390px) {
+    .caption-container {
+        bottom: 15vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
 .caption-container p {
     position: absolute;
     left: 10px;
@@ -259,6 +343,12 @@ header .bottom-navbar .post-picture img {
     visibility: hidden;
     border: 2px solid black;
 }
+@media (max-width: 390px) {
+    .creating-post-container {
+        width: 80vw;
+        top: 10vw;
+    }
+}
 .creating-post-container .image-container .labelInput {
     position: absolute;
     top: 20rem;
@@ -269,6 +359,13 @@ header .bottom-navbar .post-picture img {
     border-radius: 30px;
     color: white;
 }
+@media (max-width: 390px) {
+    .creating-post-container .image-container .labelInput {
+        
+        left: 10vw;
+        top: 70vw;
+    }
+}
 .creating-post-container .image-container img {
     width: 20rem;
     height: 20rem;
@@ -276,6 +373,16 @@ header .bottom-navbar .post-picture img {
     position: absolute;
     left: 2rem;
     top: 2rem;
+}
+@media (max-width: 390px) {
+    .creating-post-container .image-container img {
+        width: 55vw;
+        height: 55vw;
+        border: 2px solid black;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 .creating-post-container .caption-create input {
     background-color: rgb(226, 226, 226);
@@ -287,6 +394,16 @@ header .bottom-navbar .post-picture img {
     width: 20rem;
     border: none;
     border-radius: 5px;
+}
+@media (max-width: 390px) {
+    .creating-post-container .caption-create input {
+        width: 70vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 90vw;
+        
+    }
 }
 
 .creating-post-container .post-create-button {
@@ -345,6 +462,8 @@ header .bottom-navbar .post-picture img {
     position: absolute;
     top: 10px;
     right: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1400px) {
@@ -361,10 +480,21 @@ header .bottom-navbar .post-picture img {
         top: 860px;
     }
 }
+@media (max-width: 390px) {
+    .feature-menu{
+        top: 200vw;
+        gap: 1vw;
+    }
+}
 
 .feature-menu .like-list img{
     width: 2rem;
     transition: 0.4s;
+}
+@media (max-width: 390px) {
+    .feature-menu .like-list img{
+        width: 9vw;
+    }
 }
 .feature-menu .like-list img:hover {
     transform: translateY(-10px);
@@ -372,6 +502,11 @@ header .bottom-navbar .post-picture img {
 .feature-menu .save-list img{
     width: 1.6rem;
     transition: 0.4s;
+}
+@media (max-width: 390px) {
+    .feature-menu .save-list img{
+        width: 6vw;
+    }
 }
 .feature-menu .save-list img:hover {
     transform: translateY(-10px);
@@ -389,6 +524,13 @@ header .bottom-navbar .post-picture img {
     font-size: 4rem;
     text-align: center;
 }
+
+@media (max-width: 390px) {
+    .start-screen {
+        width: 80vw;
+        font-size: 10vw;
+    }
+}
 .start-screen img {
     position: absolute;
     width: 15rem;
@@ -397,6 +539,13 @@ header .bottom-navbar .post-picture img {
     right: 0;
     bottom: 5rem;
     filter: opacity(60%);
+}
+
+@media (max-width: 390px) {
+    .start-screen img {
+        width: 60vw;
+        bottom: 40vw;
+    }
 }
 .start-screen p {
     filter: opacity(60%);
